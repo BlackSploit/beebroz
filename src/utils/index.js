@@ -12,7 +12,7 @@ import highlightFourthmv from "../../beebrozz/vid1.mp4";
 import exploremv from "/assets/videos/explore.mp4";
 import framemv from "/assets/videos/frame.mp4";
 
-import apple from "../../../APPLE-WEBSITE-CLONE/beebroz.png";
+import apple from "../../beebroz.png";
 import search from "/assets/images/search.svg";
 import bag from "/assets/images/bag.svg";
 import watch from "/assets/images/watch.svg";
