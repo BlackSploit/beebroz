@@ -45,6 +45,7 @@ const Hero = () => {
       playsInline
       key={videoSrc}
       className="pointer-events-none w-[100vw] h-auto object-contain md:w-full md:h-full md:object-cover"
+      loop
     >
       <source src={videoSrc} type="video/mp4" />
     </video>
