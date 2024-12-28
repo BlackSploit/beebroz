@@ -6,14 +6,52 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+
+
+const ResponsiveComponent = () => {
+  const containerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    padding: '1rem',
+  };
+
+  const imageStyle = {
+    width: '50px',
+    height: '50px',
+    objectFit: 'contain',
+  };
+
+  const textStyle = {
+    fontSize: '1.5rem',
+    marginTop: '0.5rem',
+  };
+
+  // Adjust styles based on screen width (for basic responsiveness)
+  if (window.innerWidth >= 768) {
+    containerStyle.flexDirection = 'row';
+    containerStyle.gap = '1rem';
+    imageStyle.width = '70px';
+    imageStyle.height = '70px';
+    textStyle.fontSize = '2rem';
+  } else if (window.innerWidth <= 480) {
+    imageStyle.width = '40px';
+    imageStyle.height = '40px';
+    textStyle.fontSize = '1.2rem';
+  }
+
+
 const Navbar = () => {
   return (
     <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
       <nav className="flex w-full screen-max-width">
-        <img src={appleImg} alt="Apple logo" width={50} height={50} />
-        <p id="hero" className="hero-titlee text-white" >
+      <div style={containerStyle}>
+      <img src={appleImg} alt="Apple logo" style={imageStyle} />
+      <p id="hero" style={textStyle}>
         Beebroz
-        </p>
+      </p>
+    </div>
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((item, i) => (
             <div
