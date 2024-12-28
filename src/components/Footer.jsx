@@ -1,18 +1,17 @@
-import { footerLinks } from "../constants";
-
 const Footer = () => (
   <footer className="py-5 sm:px-10 px-5">
     <div className="screen-max-width">
       <div>
         <p className="font-semibold text-gray text-xs">
-          More ways to shop:{" "}
-          <span className="underline text-blue">Find an Apple Store </span>
-          or <span className="underline text-blue">other retailer </span> near
-          you.
-        </p>
-
-        <p className="font-semibold text-gray text-xs">
-          Or call 000800-040-1966
+          Get in touch via{" "}
+          <span className="underline text-blue">
+            <a href="https://wa.me/+919633963434" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </span>{" "}
+          or{" "}
+          <span className="underline text-blue">
+            <a href="tel:+919633963434">Call Us</a>
+          </span>
+          .
         </p>
       </div>
 
@@ -20,17 +19,8 @@ const Footer = () => (
 
       <div className="flex md:flex-row flex-col md:items-center justify-between">
         <p className="font-semibold text-gray text-xs">
-          Copyright @ 2024 Apple Inc. All rights reserved.
+          Copyright @ 2024 Beebroz. All rights reserved.
         </p>
-
-        <div className="flex">
-          {footerLinks.map((link, i) => (
-            <p key={link} className="font-semibold text-gray text-xs">
-              {link}{" "}
-              {i !== footerLinks - 1 && <span className="mx-2"> | </span>}
-            </p>
-          ))}
-        </div>
       </div>
     </div>
   </footer>

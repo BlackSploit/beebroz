@@ -5,6 +5,12 @@ import { animateWithGsap } from "../utils/animations";
 
 import { explore1Img, explore2Img, exploreVideo } from "../utils";
 import mom1 from '../../beebrozz/mom0.png'
+import mom2 from '../../beebrozz/mom1.png'
+import mom3 from '../../beebrozz/mom2.png'
+import mom4 from '../../beebrozz/mom3.png'
+import mom5 from '../../beebrozz/mom4.png'
+import mom6 from '../../beebrozz/mom5.png'
+import mom7 from '../../beebrozz/mom6.png'
 
 
 
@@ -27,7 +33,7 @@ const Features = () => {
     animateWithGsap(
       ".g_grow",
       {
-        scale: 1,
+        scale: 0.8,
         opacity: 1,
         ease: "power1",
       },
@@ -47,33 +53,16 @@ const Features = () => {
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
       <div className="screen-max-width">
         <div className="mb-12 w-full">
-          <h1 id="features_title" className="section-heading">
+          <h1 id="features_title" className="section-heading font-light">
           Beebroz in Action
           </h1>
         </div>
 
         <div className="flex flex-col justify-center items-center overflow-hidden">
-          {/* <div className="mt-32 mb-24 ml-24">
-            <h2 className="text-5xl lg:text-7xl font-semibold">   </h2>
-             <h2 className="text-5xl lg:text-7xl font-semibold">
-              Forged in titanium.
-            </h2>
-          </div> */}
+     
 
           <div className="flex-center flex-col sm:px-10">
-            {/* <div className="relative h-[50vh] w-full flex items-center">
-              <video
-                playsInline
-                id="exploreVideo"
-                className="w-full h-full object-cover object-center"
-                preload="none"
-                muted
-                autoPlay
-                ref={videoRef}
-              >
-                <source src={exploreVideo} type="video/mp4" />
-              </video>
-            </div> */}
+           
 
             <div className="flex flex-col w-full relative">
               <div className="feature-video-container">
@@ -85,9 +74,9 @@ const Features = () => {
                   />
                 </div>
 
-                <div className="overflow-hidden flex-1 h-[50vh]">
+                <div className="overflow-hidden flex-1 h-[60vh]">
                   <img
-                    src={explore2Img}
+                    src={mom2}
                     alt="titanium2"
                     className="feature-video g_grow"
                   />
@@ -97,30 +86,71 @@ const Features = () => {
 
 
 
-              <div className="feature-text-container">
-                <div className="flex-1 flex-center">
-                  <p className="feature-text g_text">
-                    iPhone 15 Pro is{" "}
-                    <span className="text-white">
-                      the first iPhone to feature an aerospace-grade titanium
-                      design
-                    </span>
-                    , using the same alloy that spacecrafts use for missions to
-                    Mars.
-                  </p>
+              <div className="feature-video-container">
+                <div className="overflow-hidden flex-1 h-[100vh]">
+                  <img
+                    src={mom6}
+                    alt="titanium"
+                    className="feature-video g_grow"
+                  />
                 </div>
 
-                <div className="flex-1 flex-center">
-                  <p className="feature-text g_text">
-                    Titanium has one of the best strength-to-weight ratios of
-                    any metal, making these our{" "}
-                    <span className="text-white">
-                      lightest Pro models ever.
-                    </span>{" "}
-                    You'll notice the difference the moment you pick one up.
-                  </p>
+                <div className="overflow-hidden flex-1 h-[60vh]">
+                  <img
+                    src={mom7}
+                    alt="titanium2"
+                    className="feature-video g_grow"
+                  />
                 </div>
               </div>
+
+
+
+              <div className="feature-video-container">
+
+
+              <div className="overflow-hidden flex-1 h-[100vh]">
+                  <img
+                    src={mom4}
+                    alt="titanium2"
+                    className="feature-video g_grow"
+                  />
+                </div>
+
+
+                <div className="overflow-hidden flex-1 h-[100vh]">
+                  <img
+                    src={mom5}
+                    alt="titanium"
+                    className="feature-video g_grow"
+                  />
+                </div>
+
+               
+              </div>
+
+
+
+
+              <div className="feature-text-container">
+  <div className="flex-1 flex-center">
+    <p className="feature-text g_text">
+      At Beebroz, we specialize in{" "}
+      <span className="text-white">crafting unique and innovative designs</span>
+      , combining creativity and technology to bring your vision to life.
+    </p>
+  </div>
+
+  <div className="flex-1 flex-center">
+    <p className="feature-text g_text">
+      Our team focuses on{" "}
+      <span className="text-white">high-quality, user-centered design</span>{" "}
+      that enhances both functionality and aesthetics. You'll see the difference
+      in every project we deliver.
+    </p>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
