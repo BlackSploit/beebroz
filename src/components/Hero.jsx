@@ -38,20 +38,24 @@ const Hero = () => {
 
         {/* Video Section */}
         <div className="flex items-center justify-center w-full h-[60vh] md:h-[70vh]">
-          <div className="w-full md:w-8/12 h-full relative">
-            <video
-              autoPlay
-              muted
-              playsInline
-              key={videoSrc}
-              className="pointer-events-none w-full h-full object-cover"
-            >
-              <source src={videoSrc} type="video/mp4" />
-            </video>
-          </div>
-        </div>
+  <div className="w-full h-full relative md:w-8/12">
+    <video
+      autoPlay
+      muted
+      playsInline
+      key={videoSrc}
+      className="pointer-events-none w-[100vw] h-auto object-contain md:w-full md:h-full md:object-cover"
+    >
+      <source src={videoSrc} type="video/mp4" />
+    </video>
+  </div>
+</div>
+
+        
+
+
       </div>
-          <br /><br />
+      
       <div id="cta" className="flex flex-col items-center opacity-0 translate-y-20">
         <a href="https://wa.me/919633963434" target="_blank" className="btn">
           Design Now

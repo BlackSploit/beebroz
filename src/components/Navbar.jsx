@@ -8,50 +8,40 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 
-const ResponsiveComponent = () => {
-  const containerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    padding: '1rem',
-  };
-
-  const imageStyle = {
-    width: '50px',
-    height: '50px',
-    objectFit: 'contain',
-  };
-
-  const textStyle = {
-    fontSize: '1.5rem',
-    marginTop: '0.5rem',
-  };
-
-  // Adjust styles based on screen width (for basic responsiveness)
-  if (window.innerWidth >= 768) {
-    containerStyle.flexDirection = 'row';
-    containerStyle.gap = '1rem';
-    imageStyle.width = '70px';
-    imageStyle.height = '70px';
-    textStyle.fontSize = '2rem';
-  } else if (window.innerWidth <= 480) {
-    imageStyle.width = '40px';
-    imageStyle.height = '40px';
-    textStyle.fontSize = '1.2rem';
-  }
-
-
 const Navbar = () => {
   return (
     <header className="w-full py-5 sm:px-10 px-5 flex justify-between items-center">
       <nav className="flex w-full screen-max-width">
-      <div style={containerStyle}>
-      <img src={appleImg} alt="Apple logo" style={imageStyle} />
-      <p id="hero" style={textStyle}>
-        Beebroz
-      </p>
-    </div>
+      <div
+  style={{
+    display: 'flex',
+    alignItems: 'center', // Vertically center-align the text with the image
+    gap: '0vh', // Add spacing between the image and text
+  }}
+>
+  <img
+    src={appleImg}
+    alt="Apple logo"
+    style={{
+      width: '7vh', // Adjust the width based on viewport height
+      height: '7vh', // Adjust the height based on viewport height
+      objectFit: 'contain', // Maintain the image's aspect ratio
+    }}
+  />
+  <p
+    id="hero"
+    style={{
+      color: 'white', // Ensure the text color is visible
+      fontSize: '3vh', // Adjust font size relative to viewport height
+      margin: 0, // Remove default margin
+    }}
+  >
+    Beebroz
+  </p>
+</div>
+
+
+
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((item, i) => (
             <div
