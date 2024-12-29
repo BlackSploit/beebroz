@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-import Logovid from '../../beebrozz/ee.mp4';
+import Logovid from '../../beebrozz/logo__.mp4';
 
 const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(Logovid);
@@ -37,7 +37,7 @@ const Hero = () => {
         </p>
 
         {/* Video Section */}
-        <div className="flex items-center justify-center w-full h-[60vh] md:h-[70vh]">
+        <div className="flex items-center justify-center w-full h-[40vh] md:h-[50vh]">
   <div className="w-full h-full relative md:w-8/12">
     <video
       autoPlay

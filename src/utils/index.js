@@ -4,11 +4,11 @@ export const heroImg = hero;
 
 import hmv from "/assets/videos/hero.mp4";
 import smallmv from "/assets/videos/smallHero.mp4";
-import highlightFirstmv from "../../beebrozz/vid1.mp4";
-import highlightSectmv from "../../beebrozz/vid1.mp4";
-import highlightThirdmv from "../../beebrozz/vid1.mp4";
+import highlightFirstmv from "../../beebrozz/v1.mp4";
+import highlightSectmv from "../../beebrozz/v5.mp4";
+import highlightThirdmv from "../../beebrozz/v3.mp4";
 // import highlightThirdmv from "/assets/videos/hightlight-sec.mp4";
-import highlightFourthmv from "../../beebrozz/vid1.mp4";
+import highlightFourthmv from "../../beebrozz/v4.mp4";
 import exploremv from "/assets/videos/explore.mp4";
 import framemv from "/assets/videos/frame.mp4";
 
